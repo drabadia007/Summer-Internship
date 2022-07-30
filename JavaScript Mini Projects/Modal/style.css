@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(221, 236, 243); */
+    background-image: url('./hero.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 18%;
+    letter-spacing: .14rem;
+}
+
+.text-red{
+    color: rgb(164, 35, 35);
+}
+
+.modal-project{
+    background-color: white;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: center;
+    /* z-index: 1; */
+}
+
+.modal-project h1{
+    /* line-height: 2rem; */
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(92, 183, 240);
+    text-transform: capitalize;
+    padding: .5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+}
+
+.modal-bg{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(117, 189, 234, 0.535);
+    transition: all .3s ease;
+    z-index: -1;
+    opacity: 0;
+}
+
+.modal-content{
+    background-color: white;
+    width: 500px;
+    padding: 3rem;
+    padding: 4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close-box{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    /* font-weight: 800; */
+    transition: .3s ease;
+}
+
+.close-box:hover{
+    transform: rotate(180deg);
+}
+
+.show{
+    z-index: 99;
+    opacity: 1;
+}

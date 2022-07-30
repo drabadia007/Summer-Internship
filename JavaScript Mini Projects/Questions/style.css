@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(173, 216, 230, 0.271);
+}
+
+.box{
+    width: 500px;
+    margin: 100px auto;
+    /* border: 2px solid red; */
+}
+
+.question-centre{
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+}
+
+.question button{
+    background: transparent;
+    border: none;
+}
+
+.question button span{
+    /* margin: 0 10px; */
+    /* background-color: transparent; */
+    color: goldenrod;
+}
+
+.title{text-align: center;}
+
+.text{
+    border-top: 2px solid gray;
+    margin-top: 1rem;
+    padding-top: .5rem;
+    display: none;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.show-text .text{
+    display: block  ;
+}
+
+.show-text .minus-icon{
+    display: inline;
+}
+
+.show-text .plus-icon{
+    display: none   ;
+}
+
+@media (max-width: 500px){
+    .box{
+        /* border: 2px solid red; */
+        width: 90%;
+    }
+}

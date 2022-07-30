@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(205, 233, 238, 0.591);
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.section-center{
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    margin: 4rem auto;
+    padding: 1rem;
+}
+
+.grocery-form h3{
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-size: 1.4rem;
+}
+
+.input-container{
+    /* border: 2px solid red; */
+    margin-top: .6rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.input-container input{
+    background-color: rgba(205, 233, 238, 0.591);
+    border: none;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: .3rem .3rem;
+    color: gray;
+}
+
+.input-container button{
+    border: none;
+    background-color: lightblue;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.grocery-container{
+    transition: all .3s linear;
+    visibility: hidden;
+}
+
+.show-container{
+    visibility: visible;
+}
+
+.grocery-item{
+    margin: .3rem 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.grocery-item p{
+    padding: 0 .3rem;
+    color: rgb(77, 72, 72);
+}
+
+.btn-container{
+    text-align: center;
+}
+
+.edit-btn,.delete-btn{
+    padding: .2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    /* text-align: center; */
+}
+
+.edit-btn{
+    color: rgb(57, 255, 47);
+}
+
+.delete-btn{
+    color: red;
+}
+
+.clear-btn{
+    color: red;
+    letter-spacing: .17rem;
+    background: none;
+    border: none;
+    /* text-align: center; */
+    /* border: 2px solid black; */
+    margin: 1rem auto;
+    display: block;
+}
+
+.alert{
+    text-align: center;
+    border-radius: 5px;
+}
+
+.alert-danger{
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.alert-success{
+    color: #155724;
+    background: #d4edda;
+}
+

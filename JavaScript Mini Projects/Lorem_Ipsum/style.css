@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(34, 156, 232, 0.197);
+}
+
+.container{
+    width: 90%;
+    margin: 20px auto;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.title{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.number{
+    padding: .3rem;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit{
+    padding: .2rem;
+    text-transform: uppercase;
+    background-color: rgb(31, 191, 236);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lorem-p{
+    /* border: 2px solid black; */
+    margin-top: 1rem;
+    /* height: 30vh; */
+}
+
+.para{
+    /* border: 2px solid blue; */
+    margin: 1rem 0;
+}
